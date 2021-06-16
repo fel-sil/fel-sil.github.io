@@ -43,7 +43,21 @@
     <section>
         <h3>CONTACTOS</h3>
         <div class="contactos">
-            Deixe seu email que enviarei o CV, obrigado.
+            <form id="form">
+                <div class="field">
+                  <label for="name">nome</label>
+                  <input type="text" name="name" id="name">
+                </div>
+                <div class="field">
+                  <label for="email">email</label>
+                  <input type="text" name="email" id="email">
+                </div>
+                <div class="field">
+                  <label for="empresa">empresa</label>
+                  <input type="text" name="empresa" id="empresa">
+                </div>
+                <input type="submit" id="button" value="Send Email" >
+              </form>
         </div>
     </section>
     <section>
@@ -77,10 +91,23 @@
         <h3>LÍNGUAS</h3>
         <img class="lang" src="/img/linguas.jpeg" alt="PT e EN">
     </section>
+     <!-- Modal content -->
+     <div class="modal" id="mail-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Email enviado, obrigado!</p>
+        </div>
+    </div>
 </div>
 </Main>
-<Footer class="footer">
+<footer class="footer">
     <p>@FelipeSilva 2021</p>
-</Footer>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript" src="/js/index.js"></script>
+
 </body>
+
 </html>

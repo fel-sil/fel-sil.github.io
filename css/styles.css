@@ -15,7 +15,7 @@ img {
 }
 
 p {
-   text-align: justify;
+   text-align: left;
 }
 
 .container{
@@ -92,7 +92,7 @@ p {
       flex-flow: column;
     }  
     .center{
-      margin: 0 3rem;
+      margin: 0 1rem;
     }
     p{
       margin: 0 5rem;

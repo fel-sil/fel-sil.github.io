@@ -8,11 +8,12 @@
    
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    
     <link rel="stylesheet" href="css/styles.css" />
-   
+
     <!-- Heading Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap"
       rel="stylesheet"
     />
     <!-- Body Fonts -->
@@ -27,13 +28,12 @@
 
     </header>
 <Main>
-<div class="container">
+<div  class="container">
     <section class="me">
         <img src="/img/felipe_silva.jpg" alt="me">
         <h1>FELIPE SILVA</h1>
         <h2>FRONTEND DEVELOPER</h2>
-    </section>
-    <section>
+   
         <h3>PERFIL</h3>
         <P>Eu sou um criativo buscando uma oportunidade no desenvolvimente de
             frontend. Meu principal objetivo é ajudar o cliente na resolução de suas dores. Sou
@@ -41,67 +41,69 @@
             alcançar os resultados.</P>
     </section>
     <section>
-        <h3>CONTACTOS</h3>
-        <div class="contactos">
-            <form id="form">
-                <div class="field">
-                  <label for="name">nome</label>
-                  <input type="text" name="name" id="name">
-                </div>
-                <div class="field">
-                  <label for="email">email</label>
-                  <input type="text" name="email" id="email">
-                </div>
-                <div class="field">
-                  <label for="empresa">empresa</label>
-                  <input type="text" name="empresa" id="empresa">
-                </div>
-                <input type="submit" id="button" value="Send Email" >
-              </form>
-        </div>
-    </section>
-    <section>
         <h3>EXPERIÊNCIA</h3>
-        <p style="font-weight: bold;">Frontend Developer</p>
+        <div class="center">
+          <p style="font-weight: bold;">Frontend Developer</p>
         <p>Projeto 360 | Março e Abril 2021</p>
             <p>Revisão de HTML e CSS</p>
             <p>Testes em windows, Android e IOS</p></br>
         <p style="font-weight: bold;">Redator e Frontend Developer</p>
-        <p>Site Ler Jorge de Sena | 2017 - Presente</p>
-            <p>Revisão de textos e upload para Wordpress</p>
-            <p>Correção de falhas</p>
-            <p>Upload de imagens e vídeos</p>
+        <p>"Ler Jorge de Sena" | 2017 - hoje</p>
+            <p>Correção de falhas Wordpress</p>
+            <p>Upload de conteúdos</p>
             <p>Gestão de redes sociais</p></br>
         <p style="font-weight: bold;">Redator e Frontend Developer</p>
         <p>Landpage Frontera | 2017</p>
             <p>Criação de site em Adobe Spark</p>
             <p>Criação de campanhas via Mailchimp</p>
+        </div>
     </section>
     <section>
         <h3>FORMAÇÃO</h3>
+        <div class="center">
         <p style="font-weight: bold;">Frontend Developer</p>
         <p>EDIT - Abril 2021</p></br>
         <img src="/img/linguagens programacao.jpg" alt="linguagens de programacao"></br>
         <p style="font-weight: bold;">DevOps e Agile Culture</p>
         <p>FIAP - SP</p>
         <p>Metodologias e melhores práticas</p>
-        <p>Diagrama UML e de Caso de Uso</p>
-    </section>
-    <section>
+        <p>Diagrama UML e de Caso de Uso</p><br>
+        </div>
         <h3>LÍNGUAS</h3>
         <img class="lang" src="/img/linguas.jpeg" alt="PT e EN">
     </section>
+    <section>
+      <h3>CONTACTOS</h3>
+      <div class="contactos">
+          <form id="form">
+              <div class="field">
+                <label for="name">nome</label>
+                <input type="text" name="name" id="name">
+              </div>
+              <div class="field">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email">
+              </div>
+              <div class="field">
+                <label for="empresa">empresa</label>
+                <input type="text" name="empresa" id="empresa">
+              </div>
+              <input type="submit" id="button" value="Send Email" >
+            </form>            
+      </div>
+      <div class="footer">@FelipeSilva 2021</div>
+  </section>
      <!-- Modal content -->
      <div class="modal" id="mail-modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <div class="close">&times;</div>
             <p>Email enviado, obrigado!</p>
         </div>
     </div>
 </div>
 </Main>
-<footer class="footer">
-    <p>@FelipeSilva 2021</p>
+<footer>
+   
 </footer>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>

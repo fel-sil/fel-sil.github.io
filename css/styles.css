@@ -61,6 +61,10 @@ p {
   justify-content: center;
 }
 
+.textdecoration{
+  text-decoration:solid;
+}
+
 .contactos {
   display: flex;
   flex-direction: column;
@@ -92,10 +96,10 @@ p {
       flex-flow: column;
     }  
     .center{
-      margin: 0 1rem;
+      margin: 0 auto;
     }
     p{
-      margin: 0 5rem;
+      margin: 0 auto;
     }
     img {
       max-width: 80%;

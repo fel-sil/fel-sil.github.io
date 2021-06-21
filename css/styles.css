@@ -16,8 +16,12 @@ img {
 
 p {
    text-align: left;
+   text-align: justify;
 }
 
+ul {
+  list-style: circle;
+}
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -94,12 +98,14 @@ p {
     .container {
       display: flex;
       flex-flow: column;
+      margin: 0 12px;
     }  
     .center{
       margin: 0 auto;
     }
     p{
       margin: 0 auto;
+      text-align: justify;
     }
     img {
       max-width: 80%;

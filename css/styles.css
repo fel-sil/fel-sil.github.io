@@ -1,4 +1,4 @@
-h1 {
+h1{
   text-align: center;
   color: rgb(70, 70, 170);
 }
@@ -9,20 +9,139 @@ h3 {
   margin: 1rem auto;
   text-align: center;
 }
-
+ul{  
+  margin: 0 1rem;
+}
+li{
+  margin: 0 1rem;
+}
+p{
+  
+  text-align: justify;
+}
 img {
   margin: 0 auto;
+  max-width: 80%;
+}
+.childcards{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px; 
+  text-align: left;
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  margin: 1rem 1rem; 
+}
+.footer {
+  text-align: right;
+  font-style: italic;
+  color: gray;
+  margin: 2rem 2rem;
+}
+.me {
+  display: flex;
+  flex-direction: column;
+}
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-p {
-   text-align: left;
-   text-align: justify;
+/* modal */
+
+.field {
+  margin: 1rem auto;
 }
 
-ul {
-  list-style: circle;
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
 }
-.container{
+
+.field input {
+  display: block;
+  min-width: 240px;
+  line-height: 2;
+  font-size: 14px;
+ 
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+
+/*Desktop*/
+
+@media (min-width: 900px){
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow:row;
+    justify-content: space-around;
+    align-items: stretch;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.container section{
+  flex-basis: 30rem;
+  margin: 1rem;
+}}
+
+/*.container{
   display: flex;
   flex-wrap: wrap;
   flex-flow:row;
@@ -31,10 +150,6 @@ ul {
   max-width: 1100px;
   margin: 0 auto;
 }
-
-/*flexbox bootstrap
-"d-flex justify-content-center"
-*/
 
 /*.container {
   display: grid;
@@ -54,27 +169,6 @@ ul {
 }  
 */
 
-.container section{
-  flex-basis: 20rem;
-  margin: 1rem;
-}
-
-.me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.textdecoration{
-  text-decoration:solid;
-}
-
-.contactos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 /*.row {
   display: flex;
   align-items: center;
@@ -87,100 +181,6 @@ ul {
   margin: 0 10px 0 0;
 }*/
 
-.footer {
-  text-align: right;
-  font-style: italic;
-  color: gray;
-  margin: 3rem auto;
-}
 
-@media (max-width: 768px) {
-    .container {
-      display: flex;
-      flex-flow: column;
-      margin: 0 12px;
-    }  
-    .center{
-      margin: 0 auto;
-    }
-    p{
-      margin: 0 auto;
-      text-align: justify;
-    }
-    img {
-      max-width: 80%;
-    }
-    .contactos {     
-      align-items: center;
-  }
-  
-}
 
-.field {
-    margin-bottom: 10px;
-  }
-  
-  .field label {
-    display: block;
-    font-size: 12px;
-    color: #777;
-  }
-  
-  .field input {
-    display: block;
-    min-width: 250px;
-    line-height: 1.5;
-    font-size: 14px;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    padding: 6px 30px;
-    font-size: 14px;
-    background-color: #4460AA;
-    color: #fff;
-    border: none
-  }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
-  .show {
-    display: block;
-  }
